@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa");
+
+* {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgb(63, 52, 52); */
+  background-image: url("../public/images/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  padding: 5px;
+  color: burlywood;
+}
+
+nav h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.searchField {
+  margin: 10px auto;
+  width: fit-content;
+}
+
+form input {
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  margin-inline: 10px;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  background-color: rgb(48, 41, 41);
+  color: burlywood;
+}
+
+button {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  background-color: rgb(48, 41, 41);
+  color: burlywood;
+}
+
+.container {
+  background-color: rgba(48, 41, 41, 0.788);
+  color: burlywood;
+  width: 55%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.container:empty {
+  display: none;
+}
+
+.city-name {
+  font-size: 1.7rem;
+}
+
+.min-max {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.weather-type {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.weather-indicators {
+  display: flex;
+  justify-content: space-around;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.hour-heading {
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(48, 41, 41);
+  color: burlywood;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+
+.hour-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: rgba(48, 41, 41, 0.788);
+  color: burlywood;
+  width: 22%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
