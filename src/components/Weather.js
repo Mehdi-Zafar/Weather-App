@@ -16,9 +16,9 @@ const Weather = () => {
     const searchCity = async (e)=>{
         e.preventDefault()
         setLoading(true)
-        const response1 = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${REACT_APP_WEATHER_API_KEY}`)
+        const response1 = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
         const data1 = await response1.json()
-        const response2 = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${data1.coord.lat}&lon=${data1.coord.lon}&cnt=8&appid=${REACT_APP_WEATHER_API_KEY}`)
+        const response2 = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${data1.coord.lat}&lon=${data1.coord.lon}&cnt=8&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
         const data2 = await response2.json()
         console.log(data1)
         console.log(data2)
